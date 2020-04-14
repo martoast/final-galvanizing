@@ -1,5 +1,8 @@
 <template>
-  <section id="contact" class="py-5">
+  <section
+    id="contact"
+    class="py-5"
+  >
     <SectionHeader
       header="North American Galvanizing Industries LLC"
       sub-header="Contact us"
@@ -8,28 +11,58 @@
 
     <v-container>
       <v-row>
-        <v-col xs12 md6>
+        <v-col
+          xs12
+          md6
+        >
           <v-form>
             <v-container pa-0>
               <v-row>
-                <v-col cols="12" md="6">
-                  <v-text-field outlined label="First Name*" />
+                <v-col
+                  cols="12"
+                  md="6"
+                >
+                  <v-text-field
+                    outlined
+                    label="First Name*"
+                  />
                 </v-col>
 
-                <v-col cols="12" md="6">
-                  <v-text-field outlined label="Last Name*" />
+                <v-col
+                  cols="12"
+                  md="6"
+                >
+                  <v-text-field
+                    outlined
+                    label="Last Name*"
+                  />
                 </v-col>
 
-                <v-col cols="12" md="6">
-                  <v-text-field outlined label="Your Email*" />
+                <v-col
+                  cols="12"
+                  md="6"
+                >
+                  <v-text-field
+                    outlined
+                    label="Your Email*"
+                  />
                 </v-col>
 
-                <v-col cols="12" md="6">
-                  <v-text-field label="Your Phone Number*" outlined />
+                <v-col
+                  cols="12"
+                  md="6"
+                >
+                  <v-text-field
+                    label="Your Phone Number*"
+                    outlined
+                  />
                 </v-col>
 
                 <v-col cols="12">
-                  <v-text-field label="Subject" outlined />
+                  <v-text-field
+                    label="Subject"
+                    outlined
+                  />
                 </v-col>
 
                 <!-- <v-col cols="12">
@@ -50,25 +83,39 @@
           </v-form>
         </v-col>
 
-        <v-col cols="12" md="6">
-          <v-container fluid pa-0>
+        <v-col
+          cols="12"
+          md="6"
+        >
+          <v-container
+            fluid
+            pa-0
+          >
             <v-row>
-              <v-col cols="12" md="6" class="pa-0">
+              <v-col
+                cols="12"
+                md="6"
+                class="pa-0"
+              >
                 <v-card-title>Mailing Address</v-card-title>
                 <v-card-text>
-                  <div>North American Galvanizing Ind. P.O. Box 121356</div>
+                  <div>North American Galvanizing Industries LLC. P.O. Box 121356</div>
                   <div>Chula Vista, CA 91912</div>
                   <div>United States</div>
                 </v-card-text>
               </v-col>
 
-              <v-col cols="12" md="6" class="pa-0">
+              <v-col
+                cols="12"
+                md="6"
+                class="pa-0"
+              >
                 <v-card-title>Contact Info</v-card-title>
                 <v-card-text>
                   <div>+1 (619) 592-9582</div>
                   <div>Fax : +1 (619) 810-0810</div>
                   <div>
-                    <a href="#">info@galvanizing-northamerican.com</a>
+                    <a href="#">trisha@galvanizing-northamerican.com</a>
                   </div>
                 </v-card-text>
               </v-col>

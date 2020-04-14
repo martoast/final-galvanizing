@@ -7,6 +7,10 @@
         aspect-ratio="4.0"
         height="100vh"
       >
+        <div>
+          <HeroFlex />
+        </div>
+
       </v-img>
     </client-only>
 
@@ -15,12 +19,13 @@
 </template>
 
 <script>
+import HeroFlex from "~/components/HeroFlex.vue";
 import BigLogo from "~/components/BigLogo.vue";
 export default {
   data: () => ({
-    src: require("~/assets/GalvanizingHero.png")
+    src: require("~/assets/finalhero.jpg")
   }),
-  components: { BigLogo },
+  components: { BigLogo, HeroFlex },
 
   computed: {
     namespace() {

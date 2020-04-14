@@ -30,7 +30,7 @@
 
                 <v-btn
                   outlined
-                  color="#BF9B2A"
+                  color="primary"
                   class="px-5"
                   x-large
                   to="/contact"
