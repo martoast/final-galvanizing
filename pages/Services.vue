@@ -19,10 +19,14 @@
             md="4"
           >
             <v-card outlined>
-              <v-img
-                :src="this.Service1"
-                height="250"
-              />
+              <client-only>
+                <v-img
+                  :src="this.Service1"
+                  height="250"
+                ></v-img>
+
+              </client-only>
+
             </v-card>
           </v-col>
 
@@ -54,10 +58,14 @@
             order-md="2"
           >
             <v-card outlined>
-              <v-img
-                :src="this.Service2"
-                height="250"
-              />
+              <client-only>
+                <v-img
+                  :src="this.Service2"
+                  height="250"
+                ></v-img>
+
+              </client-only>
+
             </v-card>
           </v-col>
 
@@ -119,8 +127,8 @@ export default {
   },
 
   data: () => ({
-    Service1: require("@/assets/Service1.jpg"),
-    Service2: require("@/assets/Service2.jpg"),
+    Service1: require("~/assets/Service1.jpg"),
+    Service2: require("~/assets/Service2.jpg"),
     testimonial: {
       blurb:
         "With Alpha Construction managing all of our customer-facing services and ASCC, helping us monitor and understand building performance, Abocado is in great shape to create and release new products.",

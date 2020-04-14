@@ -1,17 +1,20 @@
 <template>
-  <v-app dark>
+  <client-only>
+    <v-app dark>
 
-    <Appbar2 />
+      <Appbar2 />
 
-    <!-- <Jumbotron /> -->
-    <v-content>
+      <!-- <Jumbotron /> -->
+      <v-content>
 
-      <v-container>
-        <nuxt />
-      </v-container>
-    </v-content>
+        <v-container>
+          <nuxt />
+        </v-container>
+      </v-content>
 
-  </v-app>
+    </v-app>
+  </client-only>
+
 </template>
 
 <script>

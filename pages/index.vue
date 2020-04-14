@@ -1,6 +1,9 @@
 <template>
   <div id="home">
-    <v-container id="goals" tag="section">
+    <v-container
+      id="goals"
+      tag="section"
+    >
       <SectionHeader
         header="North American Galvanizing Industries LLC"
         sub-header="Our Services"
@@ -15,14 +18,23 @@
           sm="6"
           md="4"
         >
-          <v-card outlined max-width="100%">
-            <v-img :src="feature.src" height="300" />
+          <v-card
+            outlined
+            max-width="100%"
+          >
+            <v-img
+              :src="feature.src"
+              height="300"
+            />
             <v-card-title
               class="align-center"
               style="min-height: 88px;"
               v-text="feature.title"
             />
-            <v-card-text class="pb-5 pt-3" v-text="feature.text" />
+            <v-card-text
+              class="pb-5 pt-3"
+              v-text="feature.text"
+            />
           </v-card>
         </v-col>
       </v-row>
@@ -48,8 +60,15 @@
           src="https://galco.ie/wp-content/uploads/2016/08/Hot-dip-galvanizing-in-action.jpg"
         >
           >
-          <v-overlay absolute class="px-3" opacity=".8">
-            <testimonial dark :testimonial="highlightedTestimonial" />
+          <v-overlay
+            absolute
+            class="px-3"
+            opacity=".8"
+          >
+            <testimonial
+              dark
+              :testimonial="highlightedTestimonial"
+            />
           </v-overlay>
         </v-parallax>
       </v-container>
@@ -92,19 +111,19 @@ export default {
         title: "Hot Dip:",
         text:
           "Hot-dip galvanizing is the most effective form of galvanizing which involves the process of coating iron and steel with a molting layer of zinc which protects against corrosion.",
-        src: require("@/assets/HotDripGalvanizing.jpg")
+        src: require("~/assets/HotDripGalvanizing.jpg")
       },
       {
         title: "Efficiency and Quality",
         text:
           "North American Galvanizing Industries LLC counts with both a 29.6 ft long, 6.7 ft wide and 3.5 ft deep Kettle, and a 55.9 ft long , 4 ft wide and 11.6 ft deep kettle; allowing us to supply galvanizing solutions for your most demanding jobs.",
-        src: require("@/assets/Columb2.jpg")
+        src: require("~/assets/Columb2.jpg")
       },
       {
         title: "Where We Operate",
         text:
           "We are based off San Diego County and  Can offer solutions in Santa Clarita, Imperial Valley, Riverside, San Bernardino, Orange County, Los Angeles, Ventura and Santa Barbara Counties.",
-        src: require("@/assets/Columb3.jpg")
+        src: require("~/assets/Columb3.jpg")
       }
     ]
   })

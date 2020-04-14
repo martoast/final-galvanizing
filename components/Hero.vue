@@ -1,11 +1,17 @@
 <template>
-  <v-img
-    v-if="namespace"
-    :src="this.src"
-    aspect-ratio="4.0"
-    height="100vh"
-  >
-  </v-img>
+  <div>
+    <client-only>
+      <v-img
+        v-if="namespace"
+        :src="this.src"
+        aspect-ratio="4.0"
+        height="100vh"
+      >
+      </v-img>
+    </client-only>
+
+  </div>
+
 </template>
 
 <script>

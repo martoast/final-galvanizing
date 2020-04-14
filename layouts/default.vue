@@ -1,20 +1,23 @@
 <template>
-  <v-app dark>
+  <client-only>
+    <v-app dark>
 
-    <AppBar />
+      <AppBar />
 
-    <Hero />
+      <Hero />
 
-    <!-- <Jumbotron /> -->
-    <v-content>
+      <!-- <Jumbotron /> -->
+      <v-content>
 
-      <v-container>
-        <nuxt />
-      </v-container>
-    </v-content>
+        <v-container>
+          <nuxt />
+        </v-container>
+      </v-content>
 
-    <Footer />
-  </v-app>
+      <Footer />
+    </v-app>
+  </client-only>
+
 </template>
 
 <script>
