@@ -42,7 +42,7 @@
               <v-card-title>Hot-Dip Coating </v-card-title>
 
               <v-card-text>
-                “Hot-dip galvanizing is a proven technology that combats corrosion for decades without the need for maintenance.”-American Galvanizers Association (Lets backlink to their website) This practice is essentially simple and delivers a definite advantage over other rust protection techniques. As the steel is dipped in the kettle, the iron from the steel metallurgically responds with the molten zinc to create a tightly-bonded metal coating that offers superior rust protection to steel. At North American Galvanizing Industries LLC, we process our work through 5 different preparation pools to allow the steel to bond to the purest zinc coating.
+                “Hot-dip galvanizing is a proven technology that combats corrosion for decades without the need for maintenance.” -<a href="https://galvanizeit.org/galvanize-it-online-seminar/structural-steel-reliable-resilient-recyclable">American Galvanizers Association</a> <br>This practice is essentially simple and delivers a definite advantage over other rust protection techniques. As the steel is dipped in the kettle, the iron from the steel metallurgically responds with the molten zinc to create a tightly-bonded metal coating that offers superior rust protection to steel. At North American Galvanizing Industries LLC, we process our work through 5 different preparation pools to allow the steel to bond to the purest zinc coating.
               </v-card-text>
             </v-card>
           </v-col>
@@ -83,7 +83,7 @@
 
               <v-card-text>
                 <p>
-                  Our quick Turn around times are due to our galvanizing plants high capacity and efficient logistics, when the job needs to get done quickly you can count on us to get it done without compromising quality.
+                  Our quick turn around times are due to our galvanizing plants high capacity and efficient logistics, when the job needs to get done quickly you can count on us to get it done without compromising quality.
 
                 </p>
 

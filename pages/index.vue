@@ -102,9 +102,9 @@ export default {
   data: () => ({
     highlightedTestimonial: {
       blurb:
-        "Our project at Sony Studios was due on December 26, North American Galvanizing LLC Services was able to provide us with top quality services on 4 days notice even over the holidays, no other provider would even commit to less than three weeks. Their rapid production saved us from a very expensive delay, quality and customer service was top notch. ",
+        "Our project at Sony Studios was due on December 26, North American Galvanizing Industries LLC Services was able to provide us with top quality services on 4 days notice even over the holidays, no other provider would even commit to less than three weeks. Their rapid production saved us from a very expensive delay, quality and customer service was top notch. ",
       person: "Luis Robles",
-      title: "North American Galvanizing LLC"
+      title: "North American Galvanizing Industries LLC"
     },
     features: [
       {
@@ -116,13 +116,13 @@ export default {
       {
         title: "Efficiency and Quality",
         text:
-          "North American Galvanizing Industries LLC counts with both a 29.6 ft long, 6.7 ft wide and 3.5 ft deep Kettle, and a 55.9 ft long , 4 ft wide and 11.6 ft deep kettle; allowing us to supply galvanizing solutions for your most demanding jobs.",
+          "North American Galvanizing Industries LLC has both a 29.6 ft long, 6.7 ft wide and 3.5 ft deep kettle, and a 55.9 ft long , 4 ft wide and 11.6 ft deep kettle; allowing us to supply galvanizing solutions for your most demanding jobs.",
         src: require("~/assets/Columb2.jpg")
       },
       {
         title: "Where We Operate",
         text:
-          "We are based off San Diego County and  Can offer solutions in Santa Clarita, Imperial Valley, Riverside, San Bernardino, Orange County, Los Angeles, Ventura and Santa Barbara Counties.",
+          "We are based off San Diego County and  can offer solutions in Santa Clarita, Imperial Valley, Riverside, San Bernardino, Orange County, Los Angeles, Ventura and Santa Barbara Counties.",
         src: require("~/assets/Columb3.jpg")
       }
     ]

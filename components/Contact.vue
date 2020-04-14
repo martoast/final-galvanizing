@@ -115,7 +115,7 @@
               >
                 <v-card-title>Contact Info</v-card-title>
                 <v-card-text>
-                  <div>+1 (619) 592-9582</div>
+                  <div> 619-788-2147</div>
                   <div>Fax : +1 (619) 810-0810</div>
                   <div>
                     <a href="#">trisha@galvanizing-northamerican.com</a>
