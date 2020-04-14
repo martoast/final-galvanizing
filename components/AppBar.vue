@@ -2,7 +2,7 @@
   <div>
     <v-app-bar
       v-scroll="onScroll"
-      :color="!isScrolling ? 'transparent' : 'rgba(66, 66, 66, .9)'"
+      :color="!isScrolling ? 'transparent' : 'rgba(2, 66, 131)'"
       :hide-on-scroll="$vuetify.breakpoint.smAndDown"
       app
       elevate-on-scroll
@@ -22,14 +22,25 @@
         </v-btn>
       </v-toolbar-items>
 
-      <v-icon @click.stop="drawer = !drawer" class="hidden-md-and-up"
-        >mdi-menu</v-icon
-      >
+      <v-icon
+        @click.stop="drawer = !drawer"
+        class="hidden-md-and-up"
+      >mdi-menu</v-icon>
     </v-app-bar>
 
-    <v-navigation-drawer v-model="drawer" :right="right" temporary fixed>
+    <v-navigation-drawer
+      v-model="drawer"
+      :right="right"
+      temporary
+      fixed
+    >
       <v-list>
-        <v-list-item v-for="(item, i) in items" :key="i" :to="item.to" link>
+        <v-list-item
+          v-for="(item, i) in items"
+          :key="i"
+          :to="item.to"
+          link
+        >
           <v-list-item-content>
             <v-list-item-title>{{ item.text }}</v-list-item-title>
           </v-list-item-content>

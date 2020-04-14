@@ -31,7 +31,7 @@
         <v-row justify="center">
           <v-btn
             class="text--white my-2"
-            color="primary"
+            color="rgba(2, 66, 131)"
             x-large
             min-width="245"
             rounded
