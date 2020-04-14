@@ -1,92 +1,122 @@
 <template>
-  <v-layout
-    column
-    justify-center
-    align-center
-  >
-    <v-flex
-      xs12
-      sm8
-      md6
-    >
-      <div class="text-center">
-        <logo />
-        <vuetify-logo />
-      </div>
-      <v-card>
-        <v-card-title class="headline">
-          Welcome to the Vuetify + Nuxt.js template
-        </v-card-title>
-        <v-card-text>
-          <p>Vuetify is a progressive Material Design component framework for Vue.js. It was designed to empower developers to create amazing applications.</p>
-          <p>
-            For more information on Vuetify, check out the <a
-              href="https://vuetifyjs.com"
-              target="_blank"
-            >
-              documentation
-            </a>.
-          </p>
-          <p>
-            If you have questions, please join the official <a
-              href="https://chat.vuetifyjs.com/"
-              target="_blank"
-              title="chat"
-            >
-              discord
-            </a>.
-          </p>
-          <p>
-            Find a bug? Report it on the github <a
-              href="https://github.com/vuetifyjs/vuetify/issues"
-              target="_blank"
-              title="contribute"
-            >
-              issue board
-            </a>.
-          </p>
-          <p>Thank you for developing with Vuetify and I look forward to bringing more exciting features in the future.</p>
-          <div class="text-xs-right">
-            <em><small>&mdash; John Leider</small></em>
-          </div>
-          <hr class="my-3">
-          <a
-            href="https://nuxtjs.org/"
-            target="_blank"
+  <div id="home">
+    <v-container id="goals" tag="section">
+      <SectionHeader
+        header="North American Galvanizing Industries LLC"
+        sub-header="Our Services"
+      />
+
+      <v-row>
+        <v-col
+          v-for="(feature, i) in features"
+          :key="i"
+          class="d-flex"
+          cols="12"
+          sm="6"
+          md="4"
+        >
+          <v-card outlined max-width="100%">
+            <v-img :src="feature.src" height="300" />
+            <v-card-title
+              class="align-center"
+              style="min-height: 88px;"
+              v-text="feature.title"
+            />
+            <v-card-text class="pb-5 pt-3" v-text="feature.text" />
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-container>
+    <section>
+      <VideoSheet />
+    </section>
+    <section class="pt-6">
+      <SectionHeader
+        header="North American Galvanizing LLC"
+        sub-header="Quality is our Priority"
+        text="North American Galvanizing Industries LLC procedures are tracked from customer pick up to delivery, once at our plant stringent quality control measures are followed at every stage of the process. We continue to invest and develop in new technology and procedures to enhance our ability to provide to our customers state of the art galvanizing services."
+      />
+
+      <v-container
+        id="highlighted-testimonial"
+        class="pt-5 px-0 mb-n3"
+        fluid
+        tag="section"
+      >
+        <v-parallax
+          contain
+          src="https://galco.ie/wp-content/uploads/2016/08/Hot-dip-galvanizing-in-action.jpg"
+        >
           >
-            Nuxt Documentation
-          </a>
-          <br>
-          <a
-            href="https://github.com/nuxt/nuxt.js"
-            target="_blank"
-          >
-            Nuxt GitHub
-          </a>
-        </v-card-text>
-        <v-card-actions>
-          <v-spacer />
-          <v-btn
-            color="primary"
-            nuxt
-            to="/inspire"
-          >
-            Continue
-          </v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-flex>
-  </v-layout>
+          <v-overlay absolute class="px-3" opacity=".8">
+            <testimonial dark :testimonial="highlightedTestimonial" />
+          </v-overlay>
+        </v-parallax>
+      </v-container>
+    </section>
+
+    <Contact />
+  </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-import VuetifyLogo from '~/components/VuetifyLogo.vue'
-
 export default {
+  metaInfo: {
+    title: "Home",
+    meta: [
+      {
+        name: "description",
+        content: "Customized vue-cli templates for Vue and Vuetify"
+      }
+    ]
+  },
+
   components: {
-    Logo,
-    VuetifyLogo
-  }
-}
+    Heading: () => import("@/components/Heading"),
+    Testimonial: () => import("@/components/Testimonial"),
+
+    SectionHeader: () => import("@/components/SectionHeader"),
+    VideoSheet: () => import("@/components/VideoSheet"),
+    Contact: () => import("@/components/Contact")
+  },
+
+  data: () => ({
+    highlightedTestimonial: {
+      blurb:
+        "Our project at Sony Studios was due on December 26, North American Galvanizing LLC Services was able to provide us with top quality services on 4 days notice even over the holidays, no other provider would even commit to less than three weeks. Their rapid production saved us from a very expensive delay, quality and customer service was top notch. ",
+      person: "Luis Robles",
+      title: "North American Galvanizing LLC"
+    },
+    features: [
+      {
+        title: "Hot Dip:",
+        text:
+          "Hot-dip galvanizing is the most effective form of galvanizing which involves the process of coating iron and steel with a molting layer of zinc which protects against corrosion.",
+        src: require("@/assets/HotDripGalvanizing.jpg")
+      },
+      {
+        title: "Efficiency and Quality",
+        text:
+          "North American Galvanizing Industries LLC counts with both a 29.6 ft long, 6.7 ft wide and 3.5 ft deep Kettle, and a 55.9 ft long , 4 ft wide and 11.6 ft deep kettle; allowing us to supply galvanizing solutions for your most demanding jobs.",
+        src: require("@/assets/Columb2.jpg")
+      },
+      {
+        title: "Where We Operate",
+        text:
+          "We are based off San Diego County and  Can offer solutions in Santa Clarita, Imperial Valley, Riverside, San Bernardino, Orange County, Los Angeles, Ventura and Santa Barbara Counties.",
+        src: require("@/assets/Columb3.jpg")
+      }
+    ]
+  })
+};
 </script>
+<style>
+.v-card--reveal {
+  align-items: center;
+  bottom: 0;
+  justify-content: center;
+  opacity: 0.5;
+  position: absolute;
+  width: 100%;
+}
+</style>
