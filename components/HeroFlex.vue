@@ -1,19 +1,6 @@
 <template>
   <div>
 
-    <!-- <v-row
-      justify="center"
-      align="center"
-    >
-      <BigLogo />
-    </v-row> -->
-    <!-- <v-row
-      justify="center"
-      align="center"
-    >
-      <h1 class="mb-4 display-2 text-center">Providing superior quality and Services</h1>
-    </v-row> -->
-
     <v-card
       height="100vh"
       color="transparent"
