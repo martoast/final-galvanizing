@@ -118,14 +118,14 @@
                   <div> 619-788-2147</div>
                   <div>Fax : +1 (619) 810-0810</div>
                   <div>
-                    <a href="#">trisha@galvanizing-northamerican.com</a>
+                    <a href="#">info@galvanizing-northamerican.com</a>
                   </div>
                 </v-card-text>
               </v-col>
 
               <v-col cols="12">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6720.571254558503!2d-117.01872687504873!3d32.625216324072255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d94dfce944ec61%3A0xd297ae31810f003!2sChula%20Vista%2C%20CA%2091912!5e0!3m2!1sen!2sus!4v1586839553120!5m2!1sen!2sus"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d823.9511614944022!2d-117.06370467079054!3d32.59397252870723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d94e968b403c61%3A0xd8e16f0ab9aec73b!2s3261%20Main%20St%2C%20Chula%20Vista%2C%20CA%2091911!5e1!3m2!1sen!2sus!4v1586888577221!5m2!1sen!2sus"
                   width="100%"
                   height="400"
                   frameborder="0"

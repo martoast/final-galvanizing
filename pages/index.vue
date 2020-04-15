@@ -103,12 +103,12 @@ export default {
     highlightedTestimonial: {
       blurb:
         "Our project at Sony Studios was due on December 26, North American Galvanizing Industries LLC Services was able to provide us with top quality services on 4 days notice even over the holidays, no other provider would even commit to less than three weeks. Their rapid production saved us from a very expensive delay, quality and customer service was top notch. ",
-      person: "Luis Robles",
-      title: "North American Galvanizing Industries LLC"
+      person: "Robert Graham",
+      title: "Rockland Building Services"
     },
     features: [
       {
-        title: "Hot Dip:",
+        title: "Hot-dip Galvanizing:",
         text:
           "Hot-dip galvanizing is the most effective form of galvanizing which involves the process of coating iron and steel with a molting layer of zinc which protects against corrosion.",
         src: require("~/assets/HotDripGalvanizing.jpg")

@@ -26,8 +26,8 @@
 
             </p>
             <p class="mb-5">
-              Our Galvanizing plant can manage any size project with our two oversized
-              kettles measuring 30 ft and 55 ft.
+              Our galvanizing plant can manage any size project with our two oversized
+              kettles measuring 29.6 ft long, 6.7 ft wide and 3.5 ft deep kettle, and a 55.9 ft long , 4 ft wide and 11.6 ft deep.
 
             </p>
             <p class="mb-5">We know how important time is for our clients and due to our high capacity and dedicated team members, our turn around times are fast and efficient with competitive prices with excellent service.
