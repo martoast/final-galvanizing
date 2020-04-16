@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="grey lighten-3">
+    <section class="grey lighten-2">
       <v-container>
 
         <SectionHeader
