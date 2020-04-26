@@ -1,6 +1,6 @@
 <template>
   <v-alert
-    class="mt-n5"
+    class="mt-4"
     color="rgb(2,63,133)"
     dark
     dense
@@ -13,7 +13,7 @@
       >
         <v-col class="grow hidden-sm-and-down">
           <h2 class="title font-weight-light">
-            Build your next experience today.
+            Get a free quote <strong>today</strong>.
           </h2>
         </v-col>
         <v-col class="shrink">

@@ -12,6 +12,8 @@
         </v-container>
       </v-content>
 
+      <Footer />
+
     </v-app>
   </client-only>
 

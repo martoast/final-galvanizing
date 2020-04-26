@@ -1,6 +1,6 @@
 <template>
   <div id="home">
-    <v-container
+    <!-- <v-container
       id="goals"
       tag="section"
     >
@@ -38,9 +38,12 @@
           </v-card>
         </v-col>
       </v-row>
-    </v-container>
+    </v-container> -->
     <section>
       <VideoSheet />
+    </section>
+    <section>
+      <GetAQuote />
     </section>
     <section class="pt-6">
       <SectionHeader
@@ -59,22 +62,24 @@
           contain
           src="https://galco.ie/wp-content/uploads/2016/08/Hot-dip-galvanizing-in-action.jpg"
         >
-          >
+
           <v-overlay
             absolute
             class="px-3"
             opacity=".8"
           >
+
             <testimonial
               dark
               :testimonial="highlightedTestimonial"
             />
+
           </v-overlay>
         </v-parallax>
       </v-container>
     </section>
 
-    <Contact />
+    <!-- <Contact /> -->
   </div>
 </template>
 
@@ -93,6 +98,7 @@ export default {
   components: {
     Heading: () => import("@/components/Heading"),
     Testimonial: () => import("@/components/Testimonial"),
+    GetAQuote: () => import("@/components/GetAQuote"),
 
     SectionHeader: () => import("@/components/SectionHeader"),
     VideoSheet: () => import("@/components/VideoSheet"),

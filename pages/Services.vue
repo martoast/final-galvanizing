@@ -1,13 +1,52 @@
 <template>
   <div>
+    <v-container
+      id="goals"
+      tag="section"
+    >
+      <SectionHeader
+        header="North American Galvanizing Industries LLC"
+        sub-header="Our Services"
+      />
+
+      <v-row>
+        <v-col
+          v-for="(feature, i) in features"
+          :key="i"
+          class="d-flex"
+          cols="12"
+          sm="6"
+          md="4"
+        >
+          <v-card
+            outlined
+            max-width="100%"
+          >
+            <v-img
+              :src="feature.src"
+              height="300"
+            />
+            <v-card-title
+              class="align-center"
+              style="min-height: 88px;"
+              v-text="feature.title"
+            />
+            <v-card-text
+              class="pb-5 pt-3"
+              v-text="feature.text"
+            />
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-container>
     <section
       id="services"
       class="py-5"
     >
-      <SectionHeader
+      <!-- <SectionHeader
         header="North American Galvanizing Industries LLC"
         sub-header="Explore our Services"
-      />
+      /> -->
 
       <v-container>
         <v-row
@@ -134,7 +173,27 @@ export default {
         "With Alpha Construction managing all of our customer-facing services and ASCC, helping us monitor and understand building performance, Abocado is in great shape to create and release new products.",
       person: "Jay Oakrson",
       title: "CEO Avocado"
-    }
+    },
+    features: [
+      {
+        title: "Quality Tip Galvanizing",
+        text:
+          "Hot-dip galvanizing is the most effective form of galvanizing which involves the process of coating iron and steel with a molting layer of zinc which protects against corrosion.",
+        src: require("~/assets/HotDripGalvanizing.jpg")
+      },
+      {
+        title: "Affordable Expedited Service",
+        text:
+          "North American Galvanizing Industries LLC has both a 29.6 ft long, 6.7 ft wide and 3.5 ft deep kettle, and a 55.9 ft long , 4 ft wide and 11.6 ft deep kettle; allowing us to supply galvanizing solutions for your most demanding jobs.",
+        src: require("~/assets/Columb2.jpg")
+      },
+      {
+        title: "Exceptional Customer Service",
+        text:
+          "We are based off San Diego County and  can offer solutions in Santa Clarita, Imperial Valley, Riverside, San Bernardino, Orange County, Los Angeles, Ventura and Santa Barbara Counties.",
+        src: require("~/assets/Columb3.jpg")
+      }
+    ]
   })
 };
 </script>
