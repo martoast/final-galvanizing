@@ -1,10 +1,10 @@
 <template>
   <div>
-    <section>
+    <section class="grey lighten-2">
       <v-container>
 
         <SectionHeader
-          sub-header="Why North American Galvanizing Industries LLC?"
+          sub-header="Why Our Galvanizing Services?"
           header="North American Galvanizing Industries LLC"
         />
         <v-row

@@ -5,13 +5,13 @@
       <AppBar />
 
       <Hero />
-      <!-- <VideoSheet /> -->
 
       <!-- <Jumbotron /> -->
       <v-content>
 
-        <nuxt />
-
+        <v-container>
+          <nuxt />
+        </v-container>
       </v-content>
 
       <Footer />
@@ -25,15 +25,13 @@ import Jumbotron from "~/components/Jumbotron.vue";
 import AppBar from "~/components/AppBar.vue";
 import Footer from "~/components/Footer.vue";
 import Hero from "~/components/Hero.vue";
-import VideoSheet from "~/components/VideoSheet.vue";
 
 export default {
   components: {
     Jumbotron,
     AppBar,
     Footer,
-    Hero,
-    VideoSheet
+    Hero
   },
   data() {
     return {

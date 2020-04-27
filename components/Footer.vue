@@ -1,88 +1,35 @@
 <template>
-  <div>
-    <div>
+  <v-footer
+    dark
+    height="auto"
+    padless
+  >
+    <v-row class="ma-0">
 
-      <v-footer
-        dark
-        height="200px"
-        padless
-        color="#024283"
+      <v-col
+        class="text-center blue-grey darken-4 pa-3"
+        cols="12"
       >
-
-        <v-card
-          class="flex"
-          flat
-          tile
-          color="#024283"
-        >
-          <v-row
-            justify="space-around"
-            align="center"
-          >
-            <FooterLogo />
-            <!-- <h5>Copyright © 2020 Donald Miller Words, LLC. All rights reserved</h5> -->
-            <ul class="body-1">
-              <v-row>
-
-                <li
-                  v-for="(c, i) in company"
-                  :key="i"
-                >
-
-                  <a
-                    class="transition-swing ma-5"
-                    v-text="c.title"
-                    :href="c.link"
-                  />
-                </li>
-              </v-row>
-
-            </ul>
-          </v-row>
-
-        </v-card>
-
-      </v-footer>
-    </div>
-
-  </div>
+        &copy; 2020 North American Galvanizing Industries LLC — All Rights reserved.
+      </v-col>
+    </v-row>
+  </v-footer>
 </template>
 
 <script>
-import FooterLogo from "~/components/FooterLogo.vue";
 export default {
-  components: {
-    FooterLogo
-  },
   data: () => ({
     categories: [
-      { title: "SEO Services", link: "/seo" },
-      { title: "Web Development", link: "/web-development" },
-      { title: "E-Commerce", link: "/ecommerce" },
-      { title: "Digital Marketing", link: "/payperclick" }
+      "Success Stories",
+      "Case Studies",
+      "Testimonials",
+      "Press Room",
+      "Partners",
+      "JBM Construction",
+      "Macarthy Equipment",
+      "Elite Construction Management"
     ],
-    company: [
-      { title: "Home", link: "/" },
-      { title: "Services", link: "/services" },
-      { title: "About", link: "/about" },
-      { title: "Contact", link: "/contact" }
-    ],
-    icons: [
-      "mdi-facebook",
-      "mdi-twitter",
-      "mdi-google-plus",
-      "mdi-linkedin",
-      "mdi-instagram"
-    ],
-    details: [
-      [
-        "mdi-crosshairs-gps",
-        "Vía Rápida Oriente 15000",
-        "Tijuana, Baja California"
-      ],
-      ["mdi-email", "", "info@peninsulatijuana.com"],
-      ["mdi-phone", "+52 (664) 684 85 40", ""]
-    ]
+    company: ["Services", "Projects", "Our Team", "Commitment to the Community"]
   })
 };
 </script>
