@@ -18,7 +18,7 @@
         </v-col>
         <v-col class="shrink">
           <v-btn outlined>
-            Get a Quote
+            Get a free Quote
           </v-btn>
         </v-col>
       </v-row>
